@@ -27,6 +27,8 @@ mongoose.connect(connectionString, {
 process.on('uncaughtException', () => {
   mongoose.connection.disconnect()
 })
+
+
 /* 
 Note.find({}).then(result => {
   console.log(result)
